@@ -70,14 +70,6 @@ app.post("/failure", function(req, res){
 
 
 
-
-
-//API Key
-//5efafd6536c09d8a3919bc5a99674334-us2
-
-//List ID
-//0683e35d8b
-
 //"process.env.PORT || 3000" make the app work both locally and on Heroku
 app.listen(process.env.PORT || 3000, function(){
   console.log("Running on port 3000.");
@@ -95,7 +87,7 @@ app.listen(process.env.PORT || 3000, function(){
    6. Command line: heroku create
    7. Command line: git push heroku master
 
-   To modify files that is already deployed on Heroku:
+   To update files that is already deployed on Heroku:
    1. Command line: git add .
    2. Command line: git commit -m "Some description about the update"
    3. Command line: git push heroku master
