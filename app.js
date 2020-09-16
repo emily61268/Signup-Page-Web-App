@@ -42,7 +42,7 @@ app.post("/", function(req, res){
 
   const options = {
     method: "POST",
-    auth: "emily61268:5efafd6536c09d8a3919bc5a99674334-us2"
+    auth: "emily61268:API_KEY"
   };
 
   const request = https.request(url, options, function(response){
@@ -75,20 +75,3 @@ app.listen(process.env.PORT || 3000, function(){
   console.log("Running on port 3000.");
 });
 
-
-
-
-/* Steps to deploy files on Heroku:
-   1. Command line: heroku login
-   2. Add Procfile (with web: node app.js) in project folder
-   3. Command line: git init (Create a new git repository)
-   4. Command line: git add .
-   5. Command line: git commit -m "First commit" (or sth else)
-   6. Command line: heroku create
-   7. Command line: git push heroku master
-
-   To update files that is already deployed on Heroku:
-   1. Command line: git add .
-   2. Command line: git commit -m "Some description about the update"
-   3. Command line: git push heroku master
-*/
